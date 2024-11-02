@@ -39,7 +39,7 @@ jobs:
   deploy:
     runs-on: windows-latest
     needs: test
-    if: github.ref == 'refs/heads/main' # Se ejecutará solo en push a main
+    if: github.ref == 'refs/heads/main' 
 
     steps:
       - name: Checkout repository
